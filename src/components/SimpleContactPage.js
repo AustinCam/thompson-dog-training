@@ -5,7 +5,7 @@ import { ToastContainer, toast } from "react-toastify";
 import "react-toastify/dist/ReactToastify.min.css";
 import sanityClient from "../client.js";
 import PortableText from "react-portable-text";
-import { urlFor } from "../ImageUrl";
+import { urlFor } from "./ImageUrl";
 
 import Parallax from "./ParallaxHeader/ParallaxHeader";
 
