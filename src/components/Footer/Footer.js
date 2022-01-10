@@ -114,10 +114,7 @@ export default function Footer() {
                 </div>
               </div>
             </div>
-            <p>
-              &copy; 2021-Present /{" "}
-              {process.env.REACT_APP_COMPANY_NAME.toString()}
-            </p>
+            <p>&copy; 2021-Present / Thompson Dog Training Co.</p>
           </footer>
         ))}
     </>
