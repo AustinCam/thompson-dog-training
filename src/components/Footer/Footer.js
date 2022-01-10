@@ -53,12 +53,12 @@ export default function Footer() {
                   <div className="container">
                     <div className="social-media-container">
                       <a
-                        href="http://twitter.com/"
+                        href="http://tiktok.com/"
                         target={"_blank"}
                         className="social-media-icon"
                         rel="noreferrer"
                       >
-                        <Icons.FaTwitter size={40} />
+                        <Icons.FaTiktok size={40} />
                       </a>
 
                       <a
@@ -76,17 +76,6 @@ export default function Footer() {
                         rel="noreferrer"
                       >
                         <Icons.FaInstagram size={40} />
-                      </a>
-                      <a
-                        href={"http://pinterest.com/"}
-                        target={"_blank"}
-                        className="social-media-icon"
-                        rel="noreferrer"
-                      >
-                        <Icons.FaPinterest size={40} />
-                      </a>
-                      <a href="/about" className="social-media-icon">
-                        <Icons.FaYoutube size={40} />
                       </a>
                     </div>
                   </div>

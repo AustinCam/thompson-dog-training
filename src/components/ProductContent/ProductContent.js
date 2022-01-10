@@ -53,7 +53,6 @@ export default function ProductContent(props) {
               height={productContent.parallaxheight}
               text={productContent.parallaxtext}
             />
-
             <div className="container">
               <PortableText content={productContent.contentsection1} />
               <div className="container grid sm:grid-cols-1 md:grid-cols-1 lg:grid-cols-3 gap-2">
@@ -64,6 +63,7 @@ export default function ProductContent(props) {
                       title={product.title}
                       logo={product.logo.asset.url}
                       price={product.price}
+                      //description={[]}
                       description={product.description}
                     />
                   ))}

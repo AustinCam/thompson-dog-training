@@ -37,7 +37,7 @@ const ContactForm = () => {
 
   // Function that displays a success toast on bottom right of the page when form submission is successful
   const toastifySuccess = () => {
-    toast("Form sent!", {
+    toast("Email sent!", {
       position: "bottom-right",
       autoClose: 5000,
       hideProgressBar: true,
@@ -62,10 +62,10 @@ const ContactForm = () => {
       };
 
       await emailjs.send(
-        process.env.REACT_APP_SERVICE_ID,
-        process.env.REACT_APP_TEMPLATE_ID,
+        "service_d0j18kg",
+        "template_j76x6m4",
         templateParams,
-        process.env.REACT_APP_USER_ID
+        "user_byrpcddct5XaD1SGiRazw"
       );
 
       reset();

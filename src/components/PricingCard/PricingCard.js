@@ -12,12 +12,13 @@ export default function PricingCard(props) {
               <img className="img" src={props.logo} alt="" />
               <div className="img-info">
                 <div className="info-inner">
-                  <PortableText content={props.description} />
+                  {console.log(props.description)}
+                  {/* <PortableText content={props.description} /> */}
 
                   <span className="p-company"></span>
                 </div>
                 <div className="a-size">
-                  Available sizes : <span className="size">S , M , L , XL</span>
+                  <PortableText content={props.description} className="size" />
                 </div>
               </div>
             </div>
@@ -30,7 +31,7 @@ export default function PricingCard(props) {
               <a className="cart" href="/contact">
                 <span className="price">{"$" + props.price}</span>
                 <span className="add-to-cart">
-                  <span className="txt">Add to cart</span>
+                  <span className="txt">Sign up</span>
                 </span>
               </a>
             </div>
@@ -40,20 +41,3 @@ export default function PricingCard(props) {
     </div>
   );
 }
-
-// export default function PricingCard(props) {
-//   return (
-//     <article className="pricingCard text-center" key={props.index}>
-//       <h3>{props.title}</h3>
-//       <img src={props.logo} alt="PricingLogo" />
-//       <hr />
-//       <h4>${props.price}</h4>
-//       <PortableText content={props.description} />
-//       <div className="container">
-//         <Button href="/contact" className="btn btn-alternate">
-//           Buy Now
-//         </Button>
-//       </div>
-//     </article>
-//   );
-// }

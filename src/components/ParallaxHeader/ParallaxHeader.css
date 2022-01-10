@@ -44,7 +44,8 @@
 
 /* Centered text */
 .centered {
-  padding-top: 15%;
+  padding-top: 15vh;
+  padding-bottom: 10vh;
   position: relative;
   text-align: center;
   width: 100%;
