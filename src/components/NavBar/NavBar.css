@@ -1,0 +1,21 @@
+nav > * {
+  font-family: Verdana;
+  font-size: 1.5rem;
+  /* text-shadow: -1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000,
+    1px 1px 0 #000; */
+}
+.disabled {
+  text-align: red;
+}
+
+.navbar-nav > .nav-link {
+  color: var(--primary-color) !important;
+}
+
+.navbar-nav > .nav-link:hover {
+  text-decoration: underline;
+}
+
+#Navbar-brand {
+  max-height: 200px;
+}
