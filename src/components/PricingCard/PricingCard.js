@@ -3,34 +3,34 @@ import "./PricingCard.css";
 
 export default function PricingCard(props) {
   return (
-    <div class="container page-wrapper">
-      <div class="page-inner">
-        <div class="row">
-          <div class="el-wrapper">
-            <div class="box-up">
+    <div className="container page-wrapper">
+      <div className="page-inner">
+        <div className="row">
+          <div className="el-wrapper">
+            <div className="box-up">
               <h4>{props.title}</h4>
-              <img class="img" src={props.logo} alt="" />
-              <div class="img-info">
-                <div class="info-inner">
+              <img className="img" src={props.logo} alt="" />
+              <div className="img-info">
+                <div className="info-inner">
                   <PortableText content={props.description} />
 
-                  <span class="p-company"></span>
+                  <span className="p-company"></span>
                 </div>
-                <div class="a-size">
-                  Available sizes : <span class="size">S , M , L , XL</span>
+                <div className="a-size">
+                  Available sizes : <span className="size">S , M , L , XL</span>
                 </div>
               </div>
             </div>
 
-            <div class="box-down">
-              <div class="h-bg">
-                <div class="h-bg-inner"></div>
+            <div className="box-down">
+              <div className="h-bg">
+                <div className="h-bg-inner"></div>
               </div>
 
-              <a class="cart" href="/contact">
-                <span class="price">{"$" + props.price}</span>
-                <span class="add-to-cart">
-                  <span class="txt">Add to cart</span>
+              <a className="cart" href="/contact">
+                <span className="price">{"$" + props.price}</span>
+                <span className="add-to-cart">
+                  <span className="txt">Add to cart</span>
                 </span>
               </a>
             </div>

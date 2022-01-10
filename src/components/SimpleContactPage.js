@@ -5,15 +5,9 @@ import { ToastContainer, toast } from "react-toastify";
 import "react-toastify/dist/ReactToastify.min.css";
 import sanityClient from "../client.js";
 import PortableText from "react-portable-text";
-import urlBuilder from "@sanity/image-url";
+import { urlFor } from "../ImageUrl";
 
 import Parallax from "./ParallaxHeader/ParallaxHeader";
-
-const urlFor = (source) =>
-  urlBuilder({
-    projectId: process.env.REACT_APP_SANITY_PROJECT_ID.toString(),
-    dataset: process.env.REACT_APP_SANITY_DATASET_ID.toString(),
-  }).image(source);
 
 const ContactForm = () => {
   const {
