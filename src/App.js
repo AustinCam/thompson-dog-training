@@ -12,7 +12,7 @@ import EventPage from "./components/EventPage";
 import ContactPage from "./components/ContactPage";
 
 function App() {
-  document.title = process.env.REACT_APP_COMPANY_NAME;
+  document.title = "Thompson Dog Training Co.";
 
   return (
     <div className="App">
