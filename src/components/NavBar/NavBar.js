@@ -22,11 +22,9 @@ function NavBar() {
   useEffect(() => {
     sanityClient
       .fetch(
-        `*[_type == "navigation"] | order(position){
+        `*[_type == "navigation"]{
           title,
-          to,
-          position,
-          active,
+          navigationLinks[]->,
           }`
       )
       .then((data) => setNavData(data))
@@ -51,14 +49,14 @@ function NavBar() {
           <Navbar.Collapse id="basic-navbar-nav">
             <Nav className="w-100 col-md-11">
               {navData &&
-                navData.map((nav, index) => (
+                navData[0].navigationLinks &&
+                navData[0].navigationLinks.map((nav, index) => (
                   <Nav.Link
                     className="mx-auto"
                     key={"Navigation" + index}
                     href={nav.to}
-                    disabled={!nav.active}
                   >
-                    {nav.title}
+                    {nav.label}
                   </Nav.Link>
                 ))}
             </Nav>

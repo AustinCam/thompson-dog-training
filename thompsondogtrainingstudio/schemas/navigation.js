@@ -9,19 +9,15 @@ export default {
       type: "string",
     },
     {
-      name: "to",
-      title: "To",
-      type: "string",
-    },
-    {
-      name: "position",
-      title: "Position",
-      type: "number",
-    },
-    {
-      name: "active",
-      title: "Active",
-      type: "boolean",
+      title: "Navigation Links",
+      name: "navigationLinks",
+      type: "array",
+      of: [
+        {
+          type: "reference",
+          to: [{ type: "link" }],
+        },
+      ],
     },
   ],
 };

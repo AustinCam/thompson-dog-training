@@ -31,6 +31,7 @@ export default createSchema({
     // The following are document types which will appear
     // in the studio.
     logo,
+    link,
     navigation,
     home,
     aboutpage,
@@ -47,6 +48,5 @@ export default createSchema({
     localeString,
     tile,
     HomeContentLayout,
-    link,
   ]),
 });
