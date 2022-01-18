@@ -43,6 +43,7 @@ function NavBar() {
               width={"100%"}
             />
           )}
+          ;
         </Navbar.Brand>
         <div className="col-xs-10 col-sm-11">
           <Navbar.Toggle aria-controls="basic-navbar-nav" />
@@ -59,6 +60,7 @@ function NavBar() {
                     {nav.label}
                   </Nav.Link>
                 ))}
+              ;
             </Nav>
           </Navbar.Collapse>
         </div>

@@ -12,9 +12,6 @@ export default function PricingCard(props) {
               <img className="img" src={props.logo} alt="" />
               <div className="img-info">
                 <div className="info-inner">
-                  {console.log(props.description)}
-                  {/* <PortableText content={props.description} /> */}
-
                   <span className="p-company"></span>
                 </div>
                 <div className="a-size">

@@ -63,7 +63,6 @@ export default function ProductContent(props) {
                       title={product.title}
                       logo={product.logo.asset.url}
                       price={product.price}
-                      //description={[]}
                       description={product.description}
                     />
                   ))}
